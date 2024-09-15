@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.chat-container {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #ccc;
+    background-color: white;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+    padding: 10px;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* เพิ่มช่องว่างระหว่างข้อความ */
+}
+
+.message {
+    display: inline-block;
+    padding: 8px;
+    margin: 0;
+    border-radius: 5px;
+    max-width: 60%; /* สามารถปรับความกว้างสูงสุดได้ */
+}
+
+.user-message {
+    background-color: #d1f7c4;
+    align-self: flex-end;
+    text-align: right; /* ข้อความในกล่องของผู้ใช้จะถูกจัดให้ตรงขวา */
+}
+
+.bot-message {
+    background-color: #f1f0f0;
+    align-self: flex-start;
+    text-align: left; /* ข้อความในกล่องของบอทจะถูกจัดให้ตรงซ้าย */
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.chat-input button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #45a049;
+}
